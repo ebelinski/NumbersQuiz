@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		B65B7B791A77FB6800A6F97E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7B781A77FB6800A6F97E /* main.m */; };
 		B65B7B7C1A77FB6800A6F97E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7B7B1A77FB6800A6F97E /* AppDelegate.m */; };
-		B65B7B7F1A77FB6800A6F97E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7B7E1A77FB6800A6F97E /* ViewController.m */; };
-		B65B7B821A77FB6800A6F97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65B7B801A77FB6800A6F97E /* Main.storyboard */; };
 		B65B7B841A77FB6800A6F97E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65B7B831A77FB6800A6F97E /* Images.xcassets */; };
 		B65B7B871A77FB6800A6F97E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65B7B851A77FB6800A6F97E /* LaunchScreen.xib */; };
 		B65B7B931A77FB6800A6F97E /* NumbersQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7B921A77FB6800A6F97E /* NumbersQuizTests.m */; };
+		B65B7B9F1A77FC0900A6F97E /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7B9D1A77FC0900A6F97E /* QuizViewController.m */; };
+		B65B7BA01A77FC0900A6F97E /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65B7B9E1A77FC0900A6F97E /* QuizViewController.xib */; };
+		B65B7BA41A77FC1700A6F97E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7BA21A77FC1700A6F97E /* SettingsViewController.m */; };
+		B65B7BA51A77FC1700A6F97E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BA31A77FC1700A6F97E /* SettingsViewController.xib */; };
+		B65B7BA81A77FCEF00A6F97E /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BA61A77FCEF00A6F97E /* settings.png */; };
+		B65B7BA91A77FCEF00A6F97E /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BA71A77FCEF00A6F97E /* settings@2x.png */; };
+		B65B7BAC1A77FCFA00A6F97E /* cottage.png in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BAA1A77FCFA00A6F97E /* cottage.png */; };
+		B65B7BAD1A77FCFA00A6F97E /* cottage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BAB1A77FCFA00A6F97E /* cottage@2x.png */; };
+		B65B7BB31A784DDB00A6F97E /* NumbersDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7BB21A784DDB00A6F97E /* NumbersDatabase.m */; };
+		B65B7BB61A784E0F00A6F97E /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = B65B7BB51A784E0F00A6F97E /* Number.m */; };
+		B65B7BB81A7897D300A6F97E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B65B7BB71A7897D300A6F97E /* libsqlite3.dylib */; };
+		B67722151A78AEFF00366AF1 /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = B65B7BAE1A78031200A6F97E /* db.sqlite3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +42,27 @@
 		B65B7B781A77FB6800A6F97E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B65B7B7A1A77FB6800A6F97E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B65B7B7B1A77FB6800A6F97E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B65B7B7D1A77FB6800A6F97E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B65B7B7E1A77FB6800A6F97E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B65B7B811A77FB6800A6F97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B65B7B831A77FB6800A6F97E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B65B7B861A77FB6800A6F97E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B65B7B8C1A77FB6800A6F97E /* NumbersQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumbersQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65B7B911A77FB6800A6F97E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65B7B921A77FB6800A6F97E /* NumbersQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumbersQuizTests.m; sourceTree = "<group>"; };
+		B65B7B9C1A77FC0900A6F97E /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		B65B7B9D1A77FC0900A6F97E /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		B65B7B9E1A77FC0900A6F97E /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		B65B7BA11A77FC1700A6F97E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B65B7BA21A77FC1700A6F97E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B65B7BA31A77FC1700A6F97E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		B65B7BA61A77FCEF00A6F97E /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		B65B7BA71A77FCEF00A6F97E /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
+		B65B7BAA1A77FCFA00A6F97E /* cottage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cottage.png; sourceTree = "<group>"; };
+		B65B7BAB1A77FCFA00A6F97E /* cottage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cottage@2x.png"; sourceTree = "<group>"; };
+		B65B7BAE1A78031200A6F97E /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
+		B65B7BB11A784DDB00A6F97E /* NumbersDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbersDatabase.h; sourceTree = "<group>"; };
+		B65B7BB21A784DDB00A6F97E /* NumbersDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbersDatabase.m; sourceTree = "<group>"; };
+		B65B7BB41A784E0F00A6F97E /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		B65B7BB51A784E0F00A6F97E /* Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Number.m; sourceTree = "<group>"; };
+		B65B7BB71A7897D300A6F97E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B65B7BB81A7897D300A6F97E /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +107,24 @@
 			children = (
 				B65B7B7A1A77FB6800A6F97E /* AppDelegate.h */,
 				B65B7B7B1A77FB6800A6F97E /* AppDelegate.m */,
-				B65B7B7D1A77FB6800A6F97E /* ViewController.h */,
-				B65B7B7E1A77FB6800A6F97E /* ViewController.m */,
-				B65B7B801A77FB6800A6F97E /* Main.storyboard */,
+				B65B7B9C1A77FC0900A6F97E /* QuizViewController.h */,
+				B65B7B9D1A77FC0900A6F97E /* QuizViewController.m */,
+				B65B7B9E1A77FC0900A6F97E /* QuizViewController.xib */,
+				B65B7BA11A77FC1700A6F97E /* SettingsViewController.h */,
+				B65B7BA21A77FC1700A6F97E /* SettingsViewController.m */,
+				B65B7BA31A77FC1700A6F97E /* SettingsViewController.xib */,
+				B65B7BB41A784E0F00A6F97E /* Number.h */,
+				B65B7BB51A784E0F00A6F97E /* Number.m */,
+				B65B7BB11A784DDB00A6F97E /* NumbersDatabase.h */,
+				B65B7BB21A784DDB00A6F97E /* NumbersDatabase.m */,
 				B65B7B831A77FB6800A6F97E /* Images.xcassets */,
 				B65B7B851A77FB6800A6F97E /* LaunchScreen.xib */,
+				B65B7BAA1A77FCFA00A6F97E /* cottage.png */,
+				B65B7BAB1A77FCFA00A6F97E /* cottage@2x.png */,
+				B65B7BA61A77FCEF00A6F97E /* settings.png */,
+				B65B7BA71A77FCEF00A6F97E /* settings@2x.png */,
+				B65B7BAE1A78031200A6F97E /* db.sqlite3 */,
+				B65B7BB71A7897D300A6F97E /* libsqlite3.dylib */,
 				B65B7B761A77FB6800A6F97E /* Supporting Files */,
 			);
 			path = NumbersQuiz;
@@ -168,6 +205,7 @@
 				TargetAttributes = {
 					B65B7B721A77FB6800A6F97E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = H7ATB2ZBVD;
 					};
 					B65B7B8B1A77FB6800A6F97E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -199,9 +237,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65B7B821A77FB6800A6F97E /* Main.storyboard in Resources */,
 				B65B7B871A77FB6800A6F97E /* LaunchScreen.xib in Resources */,
+				B65B7BA91A77FCEF00A6F97E /* settings@2x.png in Resources */,
+				B65B7BAD1A77FCFA00A6F97E /* cottage@2x.png in Resources */,
+				B67722151A78AEFF00366AF1 /* db.sqlite3 in Resources */,
+				B65B7BA81A77FCEF00A6F97E /* settings.png in Resources */,
 				B65B7B841A77FB6800A6F97E /* Images.xcassets in Resources */,
+				B65B7BA01A77FC0900A6F97E /* QuizViewController.xib in Resources */,
+				B65B7BA51A77FC1700A6F97E /* SettingsViewController.xib in Resources */,
+				B65B7BAC1A77FCFA00A6F97E /* cottage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65B7B7F1A77FB6800A6F97E /* ViewController.m in Sources */,
 				B65B7B7C1A77FB6800A6F97E /* AppDelegate.m in Sources */,
 				B65B7B791A77FB6800A6F97E /* main.m in Sources */,
+				B65B7BB31A784DDB00A6F97E /* NumbersDatabase.m in Sources */,
+				B65B7B9F1A77FC0900A6F97E /* QuizViewController.m in Sources */,
+				B65B7BB61A784E0F00A6F97E /* Number.m in Sources */,
+				B65B7BA41A77FC1700A6F97E /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +291,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B65B7B801A77FB6800A6F97E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B65B7B811A77FB6800A6F97E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B65B7B851A77FB6800A6F97E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,9 +384,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NumbersQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NumbersQuiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +402,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NumbersQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NumbersQuiz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +469,7 @@
 				B65B7B981A77FB6800A6F97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B65B7B991A77FB6800A6F97E /* Build configuration list for PBXNativeTarget "NumbersQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +478,7 @@
 				B65B7B9B1A77FB6800A6F97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

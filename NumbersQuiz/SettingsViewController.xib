@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
+            <connections>
+                <outlet property="fromNumberField" destination="J6j-XG-bnv" id="ODw-Rs-uXK"/>
+                <outlet property="languageSelection" destination="xrm-uP-gDF" id="CmC-Aa-isJ"/>
+                <outlet property="toNumberField" destination="fQ5-fB-pAH" id="mQy-Xm-CVQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xrm-uP-gDF">
+                    <rect key="frame" x="8" y="76" width="304" height="29"/>
+                    <segments>
+                        <segment title="Spanish"/>
+                        <segment title="French"/>
+                        <segment title="German"/>
+                    </segments>
+                    <connections>
+                        <action selector="languageChanged:" destination="-1" eventType="valueChanged" id="acW-Qw-2cR"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use numbers between:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvE-FA-qaa">
+                    <rect key="frame" x="8" y="112" width="304" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6j-XG-bnv">
+                    <rect key="frame" x="8" y="141" width="130" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="rangeEdited:" destination="-1" eventType="editingDidEnd" id="6Qh-Ty-nBF"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RE-gZ-MGa">
+                    <rect key="frame" x="146" y="145" width="29" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQ5-fB-pAH">
+                    <rect key="frame" x="183" y="141" width="129" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="rangeEdited:" destination="-1" eventType="editingDidEnd" id="5FZ-7X-DIa"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select numbers between 0 and 10000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOZ-Ki-HY7">
+                    <rect key="frame" x="8" y="179" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="S8g-8x-wKX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fQ5-fB-pAH" firstAttribute="leading" secondItem="7RE-gZ-MGa" secondAttribute="trailing" constant="8" id="2IQ-5l-BTf"/>
+                <constraint firstItem="xrm-uP-gDF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3mH-eH-4IA"/>
+                <constraint firstItem="TvE-FA-qaa" firstAttribute="top" secondItem="xrm-uP-gDF" secondAttribute="bottom" constant="8" id="DWf-sg-kn2"/>
+                <constraint firstItem="TOZ-Ki-HY7" firstAttribute="top" secondItem="7RE-gZ-MGa" secondAttribute="bottom" constant="13" id="HXl-tM-BzW"/>
+                <constraint firstItem="xrm-uP-gDF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="Lge-U3-qV3"/>
+                <constraint firstItem="J6j-XG-bnv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Ng5-da-cMU"/>
+                <constraint firstItem="TOZ-Ki-HY7" firstAttribute="top" secondItem="fQ5-fB-pAH" secondAttribute="bottom" constant="8" id="RAt-Ft-B3A"/>
+                <constraint firstAttribute="trailing" secondItem="fQ5-fB-pAH" secondAttribute="trailing" constant="8" id="Rez-o1-hGK"/>
+                <constraint firstItem="TOZ-Ki-HY7" firstAttribute="top" secondItem="J6j-XG-bnv" secondAttribute="bottom" constant="8" id="a9J-0J-ybG"/>
+                <constraint firstItem="7RE-gZ-MGa" firstAttribute="leading" secondItem="J6j-XG-bnv" secondAttribute="trailing" constant="8" id="cdb-UI-j8g"/>
+                <constraint firstAttribute="trailing" secondItem="TOZ-Ki-HY7" secondAttribute="trailing" constant="8" id="dAB-Tt-Taa"/>
+                <constraint firstItem="TOZ-Ki-HY7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dgd-72-YsE"/>
+                <constraint firstItem="TvE-FA-qaa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="gNA-Sm-eJB"/>
+                <constraint firstItem="J6j-XG-bnv" firstAttribute="width" secondItem="fQ5-fB-pAH" secondAttribute="width" id="iHh-Ru-Nwq"/>
+                <constraint firstAttribute="trailing" secondItem="xrm-uP-gDF" secondAttribute="trailing" constant="8" id="pdo-OA-EzX"/>
+                <constraint firstItem="fQ5-fB-pAH" firstAttribute="top" secondItem="TvE-FA-qaa" secondAttribute="bottom" constant="8" id="qWw-Mo-0ve"/>
+                <constraint firstAttribute="trailing" secondItem="TvE-FA-qaa" secondAttribute="trailing" constant="8" id="vfN-mW-TpJ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="199" y="333"/>
+        </view>
+    </objects>
+</document>

@@ -2,7 +2,7 @@
 //  NumbersQuizTests.m
 //  NumbersQuizTests
 //
-//  Created by HHWS on 27/1/15.
+//  Created by Eugene Belinski on 27/1/15.
 //  Copyright (c) 2015 Eugene Belinski. All rights reserved.
 //
 
