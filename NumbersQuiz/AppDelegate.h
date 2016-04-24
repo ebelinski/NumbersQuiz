@@ -20,7 +20,5 @@ extern UIColor * const Color3;
 
 @property (strong, nonatomic) UIWindow *window;
 
-
-
 @end
 

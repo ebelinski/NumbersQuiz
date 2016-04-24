@@ -17,6 +17,5 @@
 
 + (NumbersDatabase *)database;
 - (Number *)makeNumber;
-//- (NSMutableArray *)getGenres;
 
 @end
